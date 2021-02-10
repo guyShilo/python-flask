@@ -11,7 +11,7 @@ if ENV == "dev":
     app.debug = True
     app.config[
         "SQLALCHEMY_DATABASE_URI"
-    ] = "postgresql://postgres:awdx159jilm@localhost/test"
+    ] = "postgresql://postgres:<PASSWORD>@localhost/test"
 else:
     app.config["SQLALCHEMY_DATABASE_URI"] = ""
     app.debug = False
